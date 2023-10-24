@@ -9,8 +9,8 @@ Interactive adventure story game using chatGPT
 제작 기간 :
 
 제작 인원 : 4명
-- 20190670 컴퓨터공학과 장다은(PM)
-- 2020 컴퓨터공학전공 고민정
+- 컴퓨터공학과 장다은(PM)
+- 컴퓨터공학전공 고민정
 - 박효정
 - 채현영
 
