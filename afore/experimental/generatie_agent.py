@@ -4,6 +4,7 @@ import re # 정규 표현식을 사용하기 위한 모듈
 from datetime import datetime # 날짜와 시간을 다루기 위한 모듈
 from typing import Any, Dict, List, Optional, Tuple # 타입 힌트를 위한 모듈. 다양한 데이터 유형
 
+import openai
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate # 대화 흐름의 템플릿화된 프롬프트를 생성하기 위해 사용
 from langchain.schema.language_model import BaseLanguageModel # 언어 모델의 기본 클래스로, 다양한 언어 모델의 공통 인터페이스를 정의
@@ -173,7 +174,12 @@ Relevant context:
             prompt.format(**kwargs)
         )
         kwargs[self.memory.most_recent_memories_token_key] = consumed_tokens  # 특정 기억 토큰의 위치를 추적하고 기록
-        return self.chain(prompt=prompt).run(**kwargs).strip()    
+        
+        try:
+            return self.chain(prompt=prompt).run(**kwargs).strip()
+        except openai.error.OpenAIError as e:
+            print("error : maximum token 오류 발생!")
+            pass
 
     # 텍스트 특정 패턴 제거
     def _clean_response(self, text: str) -> str:
