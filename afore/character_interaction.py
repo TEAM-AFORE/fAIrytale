@@ -13,7 +13,7 @@ from typing import List
 import logging
 logging.basicConfig(level=logging.ERROR)
 
-from experimental.generative_agent import GenerativeAgent
+from experimental.generatie_agent import GenerativeAgent
 from experimental.memory import GenerativeAgentMemory
 
 
@@ -97,12 +97,12 @@ def run_conversation(agents: List[GenerativeAgent], initial_observation: str) ->
     public[0] = f"{agents[0].name} said  " + str(initial_observation[0]) + "\n"
     print("처음")
     print(initial_observation)
-    _, observation = agents[1].generate_reaction(initial_observation)
+    _, observation = agents[1].generate_dialogue_response(initial_observation)
     obsv.append(observation)
     public.append(observation + "\n")
     print(observation)
     turns = 0
-    for i in range(5): # 대화 횟수 조정
+    for i in range(4): # 대화 횟수 조정
         break_dialogue = False
         for agent in agents:
             stay_in_dialogue, observation = agent.generate_dialogue_response(observation)
