@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Dead
+  - Ground
+  - Transform
+  - Monster
+  - Ladder
+  - UpperFloor
+  - Mom
+  - Door
+  - PostBox
+  - WildCat
+  - Mouse
+  - Bear
+  - Mine
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - TalkUI
+  - Water
+  - UI
+  - Ground
+  - Ladder
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Backgound1
+    uniqueID: 620924185
+    locked: 0
+  - name: Middleground
+    uniqueID: 3428799979
+    locked: 0
+  - name: Foreground
+    uniqueID: 2228132655
+    locked: 0
+  - name: TalkUI
+    uniqueID: 3871853187
+    locked: 0
