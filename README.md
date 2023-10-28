@@ -1,18 +1,17 @@
 # fAIrytale
 Interactive adventure story game using chatGPT
 
-/n
-/n
+
 
 [fAIrytale] 덕성여자대학교 졸업프로젝트 | chatGPT를 이용한 인터렉티브 어드벤처 게임
 
-제작 기간 :
+제작 기간 : 2023.03 - 2023.11
 
 제작 인원 : 4명
 - 컴퓨터공학과 장다은(PM)
 - 컴퓨터공학전공 고민정
-- 박효정
-- 채현영
+- 법학전공 박효정
+- 컴퓨터공학과 채현영
 
 [목차]
 
